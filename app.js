@@ -21,6 +21,7 @@ app.post('/register', (req, res) => {
 	const user = req.body;
 
 	user.id = data.currentID;
+	user.interesses = [];
 	data.currentID += 1;
 	data.users.push(user);
 
@@ -32,11 +33,29 @@ app.post('/register', (req, res) => {
 app.get('/explanation/:id', (req, res) => {
 	const id = req.params.id;
 	const user = data.users.find(user => user.id == id);
+
 	if (!user) {
 		res.status(404);
 		return res.render('not_found');
 	}
+
 	res.render('explanation', { user });
+});
+
+app.get('/interests', (req, res) => {
+
+});
+
+app.get('/interests/:id', (req, res) => {
+	const id = req.params.id;
+	const user = data.users.find(user => user.id == id);
+
+	if (!user) {
+		res.status(404);
+		return res.render('not_found');
+	}
+
+	res.render('interests', { user });
 });
 
 

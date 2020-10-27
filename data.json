@@ -1,1 +1,6 @@
-{"currentID":4,"users":[{"name":"1231","datanascimento":"123123-03-12","email":"ewerton.al@gmail.com","cep":"50720260","id":1},{"name":"1231","datanascimento":"123123-03-12","email":"ewerton.al@gmail.com","cep":"50720260","id":2},{"name":"1231","datanascimento":"123123-03-12","email":"ewerton.al@gmail.com","cep":"50720260","id":3}]}
+{
+	"currentID":2,
+	"users":[
+		{"name":"Ewerton","datanascimento":"1111-11-11","email":"ewerton@askdja.com","cep":"123123","id":1,"interesses":[]}
+	]
+}
