@@ -58,5 +58,17 @@ app.get('/interests/:id', (req, res) => {
 	res.render('interests', { user });
 });
 
+app.post('/interests/:id', (req, res) => {
+	const interests = [];
+	const id = req.params.id;
+	const user = data.users.find(user => user.id == id);
+	
+	for (interest in req.body) {
+		interests.push(interest);
+	}
+	
+	interests.map(interest => user.interesses.push(interest));
+	res.render('');
+});
 
 app.listen(3000, () => console.log('App is running on port 3000'));
