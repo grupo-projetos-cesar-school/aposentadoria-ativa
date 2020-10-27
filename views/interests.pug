@@ -11,42 +11,42 @@ html
         h2
           | Quais seus interesses?
       .container
-        form(action=`/interests/${user.id}`)
+        form(action=`/interests/${user.id}`, method="POST")
           .row
             .col
-              input#myCheckbox1(type="checkbox", value="Viagem", name="Viagem")
+              input#myCheckbox1(type="checkbox", name="viagem", value="viagem")
               label(for="myCheckbox1") Viagem
                 img(src="https://www.flaticon.com/svg/static/icons/svg/3602/3602668.svg")
             .col
-              input#myCheckbox2(type="checkbox")
+              input#myCheckbox2(type="checkbox", name="ioga", value="ioga")
               label(for="myCheckbox2") Ioga
                 img(src="https://www.flaticon.com/svg/static/icons/svg/3602/3602668.svg")
           .row
             .col
-              input#myCheckbox3(type="checkbox")
-              label(for="myCheckbox3") Ioga
+              input#myCheckbox3(type="checkbox", name="fotografia", value="fotografia")
+              label(for="myCheckbox3") Fotografia
                 img(src="https://www.flaticon.com/svg/static/icons/svg/3602/3602668.svg") 
             .col
-              input#myCheckbox4(type="checkbox")
-              label(for="myCheckbox4") Ioga
+              input#myCheckbox4(type="checkbox", name="jardinagem", value="jardinagem")
+              label(for="myCheckbox4") Jardinagem
                 img(src="https://www.flaticon.com/svg/static/icons/svg/3602/3602668.svg") 
           .row
             .col
-              input#myCheckbox5(type="checkbox")
-              label(for="myCheckbox5") Ioga
+              input#myCheckbox5(type="checkbox", name="exercicios", value="exercicios")
+              label(for="myCheckbox5") Exercícios
                 img(src="https://www.flaticon.com/svg/static/icons/svg/3602/3602668.svg")
             .col
-              input#myCheckbox6(type="checkbox")
-              label(for="myCheckbox6") Ioga
+              input#myCheckbox6(type="checkbox", name="culinaria", value="culinaria")
+              label(for="myCheckbox6") Culinária
                 img(src="https://www.flaticon.com/svg/static/icons/svg/3602/3602668.svg")
           .row
             .col
-              input#myCheckbox7(type="checkbox")
-              label(for="myCheckbox7") Ioga
+              input#myCheckbox7(type="checkbox", name="pintura", value="pintura")
+              label(for="myCheckbox7") Pintura
                 img(src="https://www.flaticon.com/svg/static/icons/svg/3602/3602668.svg")
             .col
-              input#myCheckbox8(type="checkbox")
-              label(for="myCheckbox8") Ioga
+              input#myCheckbox8(type="checkbox", name="saude", value="saude")
+              label(for="myCheckbox8") Saúde
                 img(src="https://www.flaticon.com/svg/static/icons/svg/3602/3602668.svg")
           #btn-continue
             button.btn.btn-primary(type="submit") Continuar
