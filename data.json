@@ -1,6 +1,1 @@
-{
-	"currentID":2,
-	"users":[
-		{"name":"Ewerton","datanascimento":"1111-11-11","email":"ewerton@askdja.com","cep":"123123","id":1,"interesses":[]}
-	]
-}
+{"currentID":6,"users":[{"name":"Ewerton","datanascimento":"1111-11-11","email":"ewerton@askdja.com","cep":"123123","id":1,"interesses":[]},{"name":"José","datanascimento":"2010-12-05","email":"jose@cesar.school","cep":"123421-10","id":2,"interesses":[]},{"name":"João","datanascimento":"2010-02-04","email":"joao@cesar.school","cep":"324234","id":3,"interesses":[]},{"name":"asda","datanascimento":"2122-03-12","email":"ewerton.al@gmail.com","cep":"50720260","id":4,"interesses":["viagem","fotografia","jardinagem"]},{"name":"Romulo","datanascimento":"1999-03-05","email":"rjml@cesar.school","cep":"123123123","id":5,"interesses":["fotografia","jardinagem","exercicios","culinaria"]}]}

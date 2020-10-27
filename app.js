@@ -59,16 +59,25 @@ app.get('/interests/:id', (req, res) => {
 });
 
 app.post('/interests/:id', (req, res) => {
+	let  updatedUsers;
 	const interests = [];
 	const id = req.params.id;
 	const user = data.users.find(user => user.id == id);
-	
+
 	for (interest in req.body) {
 		interests.push(interest);
 	}
 	
 	interests.map(interest => user.interesses.push(interest));
-	res.render('');
+	user.interesses = interests;
+	updatedUsers = data.users.filter(user => user.id != id);
+	updatedUsers.push(user);
+	data.users = updatedUsers;
+
+	const json = JSON.stringify(data);
+	fs.writeFileSync('data.json', json);
+
+	res.send('qualquer coisa');
 });
 
 app.listen(3000, () => console.log('App is running on port 3000'));
