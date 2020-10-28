@@ -3,9 +3,143 @@
 	"posts": [
 		{
 			"titulo": "Idosos viajando sozinhos? Agência para terceira idade tem pacotes especiais.",
-			"conteudo": "Viajantes com mais de 60 anos são um importante público para o turismo. Prova disso é que, em setembro deste ano, o Ministério do Turismo lançou uma cartilha com informações e orientações para melhorar as experiências de viagem dos idosos... - Veja mais em https://www.uol.com.br/nossa/viagem/listas/idoso-viajando-sozinho-agencias-para-terceira-idade-tem-pacotes-especiais.htm?cmpid=copiaecola",
+			"conteudo": "Viajantes com mais de 60 anos são um importante público para o turismo. Prova disso é que, em setembro deste ano, o Ministério do Turismo lançou uma cartilha com informações e orientações para melhorar as experiências de viagem dos idosos... - Veja mais em: https://www.uol.com.br/nossa/viagem/listas/idoso-viajando-sozinho-agencias-para-terceira-idade-tem-pacotes-especiais.htm?cmpid=copiaecola",
 			"img": "https://conteudo.imguol.com.br/c/entretenimento/29/2016/11/25/boa-assessoria-permite-que-idosos-viajem-sozinhos-para-onde-quiserem-1480095492497_615x300.jpg",
 			"tags": ["viagem"]
+		},
+		{
+			"titulo": "Viagens na terceira idade, com Silvia Triboni.",
+			"conteudo": "As viagens viraram uma rotina em minha vida. Nada, nem ninguém, me impedia, ou impede, de viajar... -Veja mais em: https://quantocustaviajar.com/blog/viagens-na-terceira-idade/",
+			"img": "https://cache.quantocustaviajar.com/blog/wp-content/uploads/2020/01/viagens-na-terceira-idade4.jpg",
+			"tags": ["viagem"]
+		},
+		{
+			"titulo": "Viagem pós pandemia: quais as opções?",
+			"conteudo": "Lembramos que durante a pandemia, qualquer tipo de exposição social só deve ocorrer quando a situação permitir e, ainda assim, observando-se todas as condições de segurança recomendadas pelos órgãos de saúde.- Veja mais em: https://www.viajantemovel.com.br/viagens-pos-pandemia-quais-opcoes/",
+			"img": "https://i0.wp.com/www.viajantemovel.com.br/wp-content/uploads/2020/06/aeroporto-belo-horizonte-minas-gerais.jpg?w=620&ssl=1",
+			"tags": ["viagem"]
+		},
+		{
+			"titulo": "8 dicas para melhorar a sua prática de Yoga",
+			"conteudo": "#1 Respeite os limites do seu corpo. Consegue fazer seu nariz tocar no joelho ao dobrar-se para frente? Algumas pessoas conseguem se curvar mais que outras. - Veja mais em: https://www.artofliving.org/br-pt/yoga/yoga-iniciantes/8-dicas-para-melhorar-sua-pratica-de-yoga ",
+			"img": "https://www.artofliving.org/sites/www.artofliving.org/files/wysiwyg_imageupload/Progetto%20senza%20titolo%20copia_34.png",
+			"tags": ["ioga"]
+		},
+		{
+			"titulo": "Site com fotos e guias para posições de Yoga",
+			"conteudo": "No Yoga, os asanas – que são as posições (ou posturas) feitas com o corpo – não trabalham apenas o corpo físico, fortalecendo-o e alongando-o, como também podem amenizar alguns desafios que você possui na vida. - Veja mais em: https://www.personare.com.br/posicoes-de-yoga-revelam-seus-desafios-na-vida-m7308",
+			"img": "https://d168rbuicf8uyi.cloudfront.net/wp-content/uploads/2017/09/24160347/9795_E.jpg",
+			"tags": ["ioga"]
+		},
+		{
+			"titulo": "8 curiosidades da fotografia que você precisa conhecer !",
+			"conteudo": "A fotografia é conhecida como a forma de expressar a arte, mas ela vai muito além disso. Para quem pretende iniciar neste mercado agora, pode se deparar com algumas curiosidades incríveis deste segmento. - Veja mais em: https://blog.emania.com.br/8-curiosidades-da-fotografia-que-voce-precisa-conhecer/",
+			"img": "https://blog.emania.com.br/wp-content/uploads/2017/04/curiosidades-da-fotografia-primeira-cE%CC%81mera-digital.jpg",
+			"tags": ["fotografia"]
+		},
+		{
+			"titulo": "100 Dicas de forografia para inspirar e motivar",
+			"conteudo": "O fotografo Martin Gommel postou em seu blog uma lista de 100 dicas de fotografia que aprendeu ao longo dos anos. A lista é muito interessante, inspiradora e educativa tanto para quem está começando quanto para os fotógrafos mais experientes: - Veja mais em: https://fotografiaprofissional.org/100-dicas-de-fotografia/",
+			"img": "https://fotografiaprofissional.org/wp-content/uploads/2018/09/dicas-de-fotografia-01-2.jpg",
+			"tags": ["fotografia"]
+		},
+		{
+			"titulo": "As Mais Lindas Fotos de Paisagem",
+			"conteudo": "Aqueles que contemplam a beleza da terra, encontram reservas de força que irão perdurar enquanto a vida durar - Veja mais em: https://pt.wix.com/blog/2018/06/lindas-fotos-paisagem/",
+			"img": "https://static.wixstatic.com/media/bb1bd6_c03abe5cd5044be29dd352a11bd653e2~mv2.png/v1/fill/w_730,h_490,al_c,q_90,usm_0.66_1.00_0.01/bb1bd6_c03abe5cd5044be29dd352a11bd653e2~mv2.webp",
+			"tags": ["fotografia"]
+		},
+		{
+			"titulo": "Plantas de Sombra: Conheça 17 Plantas Ornamentais e Dicas de Como Cuidar",
+			"conteudo": "Se você gosta de flores e plantas, mas não tem um jardim amplo para cultivá-las, saiba que é possível sim ter lindos vasos com plantas em casa. O truque é investir nas plantas de sombra que se adaptam super bem dentro de casa e no jardim de inverno, onde os raios de sol não chegam.  - Veja mais em: https://www.vivadecora.com.br/revista/plantas-de-sombra/",
+			"img": "https://imagens-revista.vivadecora.com.br/uploads/2020/01/plantas-de-sombra-peperomia-foto-casavogue.jpg",
+			"tags": ["jardinagem"]
+		},
+		{
+			"titulo": "Plantas fáceis de cuidar: 40 espécies práticas para cultivar em casa",
+			"conteudo": "Ter plantas em casa, no jardim ou na varanda, deixa o ambiente mais agradável, bonito e aconchegante. Mas, nem todas as espécies precisam de cuidados especiais, algumas são plantas fáceis de cuidar e demandam pouca manutenção - Veja mais em: https://www.tuacasa.com.br/plantas-faceis-de-cuidar/",
+			"img": "https://www.tuacasa.com.br/wp-content/uploads/2018/08/plantas-faceis-de-cuidar-1.jpg",
+			"tags": ["jardinagem"]
+		},
+		{
+			"titulo": "10 dicas de jardinagem para colocar em prática na quarentena",
+			"conteudo": "Manter contato com a natureza é terapêutico, a ciência já comprovou. E não é preciso ir à praia, à montanha ou sair de casa para desfrutar de todo este benefício. - Veja mais em: https://www.gazetadopovo.com.br/haus/manifesto-haus/10-dicas-jardinagem-colocar-pratica-quarentena/",
+			"img": "https://media.gazetadopovo.com.br/2020/04/06193534/jardinagem-quarentena-coronavirus-quarentena-bigstock-1.jpg",
+			"tags": ["jardinagem"]
+		},
+		{
+			"titulo": "5 dicas para melhorar a prática de atividade física",
+			"conteudo": "Os brasileiros estão com hábitos mais saudáveis. A prática de atividade física no tempo de lazer aumentou 24,1% nos últimos oito anos - Veja mais em: https://saudebrasil.saude.gov.br/eu-quero-me-exercitar-mais/conheca-cuidados-basicos-antes-de-comecar-uma-atividade-fisica",
+			"img": "https://saudebrasil.saude.gov.br/images/jogging.jpg",
+			"tags": ["exercicios"]
+		},
+		{
+			"titulo": "Atividade física, curiosidades importantes sobre praticar!",
+			"conteudo": "ocê sabia que praticar atividade física regularmente promove um aumento da produção de células do cérebro? Você sabia que a falta da atividade física é a responsável por mais de 10% das mortes entre a população brasileira. - Veja mais em: https://www.buscarsaude.com.br/23-curiosidades-sobre-praticar-atividade-fisica/",
+			"img": "https://www.buscarsaude.com.br/i/484/curiosidades-exercicio-fisico-600.webp",
+			"tags": ["exercicios"]
+		},
+		{
+			"titulo": "Exercícios físicos garantem qualidade de vida a idosos",
+			"conteudo": "A Organização Mundial da Saúde estima que, em 2050, a população mundial com idade superior a 60 anos chegue a 2 bilhões. Isso representa um quinto da população mundial! Com o aumento da estimativa de vida vem um grande desafio: como envelhecer saudável? - Veja mais em: http://www.blog.saude.gov.br/index.php/promocao-da-saude/53940-idosos-que-praticam-exercicios-fisicos-tem-mais-qualidade-de-vida",
+			"img": "http://www.blog.saude.gov.br/images/idososativos.jpg",
+			"tags": ["exercicios"]
+		},
+
+		{
+			"titulo": "Comida saudável para todos",
+			"conteudo": " Há poucos anos, jornais, revistas e profissionais da saúde passaram a nos alertar para o perigo da ingestão de gorduras. Em seguida, as manchetes condenaram os carboidratos. E quem curtiu esse cenário de “pode isso”, “não pode aquilo” foi a indústria das dietas. Presenciamos, então, mudanças nos rótulos dos alimentos e naquilo que entendemos por comida. - Veja mais em: http://comidasaudavelpratodos.com.br/",
+			"img": "http://comidasaudavelpratodos.com.br/wp-content/uploads/2019/01/Screen-Shot-2020-04-22-at-10.58.44.png",
+			"tags": ["culinaria"]
+		},
+		{
+			"titulo": "Site receitas Ana maria",
+			"conteudo": "Confira as receitas do programa Mais Você - Veja mais em: https://anamariabraga.globo.com/receitas/",
+			"img": "https://portal-amb-imgs.clubedaana.com.br/2019/02/WhatsApp-Image-2019-02-27-at-10.06.06.jpeg",
+			"tags": ["culinaria"]
+		},
+		{
+			"titulo": "Panelinha: Comida de verdade",
+			"conteudo": "Cozinha prática com ingredientes naturais - Veja mais em: https://www.panelinha.com.br/",
+			"img": "https://cdn.panelinha.com.br/subhome/1603110983128-chama-cp2020-bloco.jpg",
+			"tags": ["culinaria"]
+		},
+		{
+			"titulo": "Dez dicas de alimentação para melhorar a saúde da pessoa idosa",
+			"conteudo": "A cada ano que passa, mais pessoas conseguem chegar aos sessenta anos, independentemente do país de origem. - Veja mais em: http://www.blog.saude.gov.br/index.php/promocao-da-saude/52984-dez-dicas-de-alimentacao-para-melhorar-a-saude-do-idoso",
+			"img": "http://www.blog.saude.gov.br/images/pessoa_idosa_alimenta%C3%A7%C3%A3o_cr%C3%A9dito_Canon_Boy.jpg",
+			"tags": ["saude"]
+		},
+		{
+			"titulo": "Dicas de uma alimentação saudável para os idosos",
+			"conteudo": "A velhice, é um período da vida e uma consequência natural do processo de envelhecimento, caracterizado por um conjunto de alterações na estrutura e na função de órgãos e de tecidos, que ocorrem ao longo do tempo. - Veja mais em: https://cuidarsaude.com/dicas-de-uma-alimentacao-saudavel-para-os-idosos/",
+			"img": "https://cuidarsaude.com/wp-content/uploads/2017/08/Cuidar-18.08.2017-blog-1.png",
+			"tags": ["saude"]
+		},
+		{
+			"titulo": "TERCEIRA IDADE: 5 DICAS PARA MELHORAR A SAÚDE MENTAL DOS IDOSOS",
+			"conteudo": "Quem pensa que é só a saúde física que sofre as consequências do tempo está muito enganado. Por vezes, o processo de envelhecimento obriga as pessoas a passarem por situações nada agradáveis, como a perda de entes queridos, as mudanças no corpo, a perda de energia, entre outras coisas. - Veja mais em: https://drogariasantoremedio.com.br/melhorar-saude-mental-idosos/",
+			"img": "https://cdn.shortpixel.ai/client/q_lossless,ret_img,w_768/https://drogariasantoremedio.com.br/wp-content/uploads/2019/03/saude-menta-idosos-header-768x513.jpg",
+			"tags": ["saude"]
+		},
+		{
+			"titulo": "6 dicas essenciais para começar a pintar telas com tinta a óleo",
+			"conteudo": " Para quem organiza eventos, saber identificar tendências é necessário. Mas, além disso, é importante alinhar o que está em alta com custo, praticidade e o visual completo, garantindo um resultado que agrade a todos- Veja mais em: https://blog.grafittiartes.com.br/6-dicas-essenciais-para-comecar-a-pintar-telas-com-tinta-a-oleo/",
+			"img": "https://blog.grafittiartes.com.br/wp-content/uploads/2017/06/92937-6-dicas-essenciais-para-comecar-a-pintar-telas-com-tinta-a-oleo.jpg",
+			"tags": ["pintura"]
+		},
+		{
+			"titulo": "Como pintar um quadro: algumas dicas para inspirá-lo",
+			"conteudo": "Talvez você pense que pintar um quadro é uma atividade que só é permitida para aquelas pessoas com certos “dons artísticos” ou que tenham frequentado aulas de pintura. - Veja mais em: https://decortips.com/pt/faca-voce-mesmo/como-pintar-um-quadro-algumas-dicas/",
+			"img": "https://decortips.com/pt/wp-content/uploads/2018/11/dicas-pintura.jpg",
+			"tags": ["pintura"]
+		},
+		{
+			"titulo": "9 técnicas de aquarela para iniciante",
+			"conteudo": "Já falamos aqui no blog sobre a história da tinta aquarela, agora vamos te mostrar modos criativos de como utilizar as suas aquarelas. Para isso, recorremos ao professor de Educação Artística Thiago Spikes, que ensina sobre pintura no canal CrasConversaOficial. - Veja mais em: https://blog.grafittiartes.com.br/9-tecnicas-de-aquarela-para-iniciantes/",
+			"img": "https://blog.grafittiartes.com.br/wp-content/uploads/2019/01/joshua-ness-661484-unsplash-1024x683.jpg",
+			"tags": ["pintura"]
 		}
+
 	]
 }
