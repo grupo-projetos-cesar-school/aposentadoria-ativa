@@ -1,19 +1,20 @@
 const fs = require('fs');
 const data = require('./data.json');
+const posts = require('./posts.json');
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 
 app.set('view engine', 'pug');
+app.use('/static', express.static('public'));
 
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', (req, res) => {
-	res.render('explanation');
+	res.render('main');
 });
 
 app.get('/register', (req, res) => {
-	console.log(data);
 	res.render('register_form');
 });
 
@@ -76,8 +77,24 @@ app.post('/interests/:id', (req, res) => {
 
 	const json = JSON.stringify(data);
 	fs.writeFileSync('data.json', json);
-
-	res.send('qualquer coisa');
+	res.render('main');
 });
 
-app.listen(3000, () => console.log('App is running on port 3000'));
+app.get('/main/:id', (req, res)=> {
+	const id = req.params.id;
+	const user = data.users.find(user => user.id == id);
+	const interests = user.interesses;
+	const allPosts = posts.posts;
+	const userPosts = [];
+
+	for (post of allPosts) {
+		for (interest of interests) {
+			if (post.tags.includes(interest)) {
+				userPosts.push(post);
+			}
+		}
+	}
+	res.render('main', { posts: userPosts });
+});
+
+app.listen(3000, () => console.log("Abuelo's app is running on port 3000"));
