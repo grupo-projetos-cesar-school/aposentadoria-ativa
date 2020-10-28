@@ -54,8 +54,9 @@ html
 						.row
 							.col
 								a(class="h2", href="")=post.titulo
+								p=post.conteudo
 							.col
-								a(href="")
+								img(src=post.img, alt="")
 						.row
 							each tag in post.tags
 								.col
