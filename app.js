@@ -97,4 +97,4 @@ app.get('/main/:id', (req, res)=> {
 	res.render('main', { posts: userPosts });
 });
 
-app.listen(3000, () => console.log("Abuelo's app is running on port 3000"));
+app.listen(3000, () => console.log("Abuelos' app is running on port 3000"));
