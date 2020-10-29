@@ -10,7 +10,7 @@ Agora todas as dependências do projeto estão instaladas. Para executar a aplic
 ```
 npm start
 ```
-No navegador, abra localhost:3000/ e preencha suas informações que você será redirecionado automaticamente para as páginas disponíveis até então.
+No navegador, abra ```localhost:3000/``` e preencha suas informações que você será redirecionado automaticamente para as páginas disponíveis até então.
 
 
 ## Projeto Aposentadoria Ativa
