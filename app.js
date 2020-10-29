@@ -11,7 +11,7 @@ app.use('/static', express.static('public'));
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', (req, res) => {
-	res.render('main');
+	res.redirect('/register');
 });
 
 app.get('/register', (req, res) => {
@@ -77,7 +77,7 @@ app.post('/interests/:id', (req, res) => {
 
 	const json = JSON.stringify(data);
 	fs.writeFileSync('data.json', json);
-	res.render('main');
+	res.redirect("/main/" + id);
 });
 
 app.get('/main/:id', (req, res)=> {
