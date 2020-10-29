@@ -1,3 +1,16 @@
+## Passo a passo para executar o projeto no navegador
+
+Após baixar o projeto, em package.json faça no terminal: 
+```
+npm install
+```
+Considerando que você já tem o node.js, preferencialmente na versão 12.19.0, instalado em seu pc, execute no terminal:
+```
+node app.js
+```
+No navegador, abra localhost:3000/ e preencha suas informações que você será redirecionado automaticamente para as páginas disponíveis até então.
+
+
 ## Projeto Aposentadoria Ativa
 
 O Aposentadoria Ativa surgiu com o **intuito de oferecer bem estar, segurança e instruções assertivas para os idosos que estão próximos da aposentadoria, ou até para aqueles que não estão se adaptando muito bem nessa nova fase de vida**. 
@@ -35,18 +48,4 @@ Através de processos de Design Sprint e Design Thinking, o projeto está se des
 - [ ] Editar perfil
 - [ ] Sessão Minha Aposentadoria
 - [ ] Tutorial de como utilizar a plataforma
-
-
-#### Passo a passo para executar o projeto no navegador
-
-Após baixar o projeto, em package.json faça no terminal: 
-```
-npm install
-```
-Considerando que você já tem o node.js, preferencialmente na versão 12.19.0, instalado em seu pc, execute no terminal:
-```
-node app.js
-```
-No navegador, abra localhost:3000/ e preencha suas informações que você será redirecionado automaticamente para as páginas disponíveis até então.
-
 
