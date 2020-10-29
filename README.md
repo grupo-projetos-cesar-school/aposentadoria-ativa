@@ -2,13 +2,13 @@
 
 As instruções a seguir supõem que você possui ```npm``` e ```node``` instalados no seu computador. De preferência, ter a versão ```12.19.0``` do Node.js instalada, pois a aplicação foi desenvolvida nesta versão.  
 
-Após baixar o projeto, faça no terminal: 
+Após baixar o projeto e estando na pasta raiz, faça no terminal: 
 ```
 npm install
 ```
 Considerando que você já tem o node.js, preferencialmente na versão 12.19.0, instalado em seu pc, execute no terminal:
 ```
-node app.js
+npm start
 ```
 No navegador, abra localhost:3000/ e preencha suas informações que você será redirecionado automaticamente para as páginas disponíveis até então.
 
