@@ -1,7 +1,6 @@
 ## Passo a passo para executar o projeto no navegador
 
-As instruções a seguir supõem que você possui ```npm``` e ```node``` instalado no seu computador. De preferência, ter a versão 12.19.0 do Node.js instalada, pois a aplicação foi desenvolvida nesta versão.  
-<br />
+As instruções a seguir supõem que você possui ```npm``` e ```node``` instalados no seu computador. De preferência, ter a versão ```12.19.0``` do Node.js instalada, pois a aplicação foi desenvolvida nesta versão.  
 
 Após baixar o projeto, faça no terminal: 
 ```
