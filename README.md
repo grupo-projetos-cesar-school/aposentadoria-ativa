@@ -1,6 +1,9 @@
 ## Passo a passo para executar o projeto no navegador
 
-Após baixar o projeto, em package.json faça no terminal: 
+As instruções a seguir supõem que você possui ```npm``` e ```node``` instalado no seu computador. De preferência, ter a versão 12.19.0 do Node.js instalada, pois a aplicação foi desenvolvida nesta versão.  
+<br />
+
+Após baixar o projeto, faça no terminal: 
 ```
 npm install
 ```
