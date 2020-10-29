@@ -2,7 +2,7 @@
 
 As instruções a seguir supõem que você possui ```npm``` e ```node``` instalados no seu computador. De preferência, ter a versão ```12.19.0``` de Node.js instalada, pois a aplicação foi desenvolvida nesta versão.  
 
-Após baixar o projeto e estando na pasta raiz, faça no terminal: 
+Após baixar os arquivos projeto e estando na pasta raiz deste, faça no terminal: 
 ```
 npm install
 ```
