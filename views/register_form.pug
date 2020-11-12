@@ -13,9 +13,10 @@ html(lang="en")
 			div(class="container-fluid")
 				form(action="/register" method="POST")
 					div(class="form-group")
-					label(for="name") Nome:
-					br
-					input(type="text", name="name")
+						label(for="name") Nome:
+						br
+						input(type="text", name="name")
+						br
 			
 					div(class="form-group")
 						label(for="datanascimento") Data de Nascimento:
@@ -33,6 +34,12 @@ html(lang="en")
 						label(for="cep") CEP:
 						br
 						input(type="text", name="cep", id="cep")
+						br
+
+					div(class="form-group")
+						label(for="senha") Senha:
+						br
+						input(type="password", name="senha", id="senha")
 						br
 
 					button(type="submit", class="btn btn-primary") Continuar
