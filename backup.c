@@ -18,23 +18,39 @@ struct lista {
         struct lista *prox;
 };
 
+void printUser(struct lista *user)
+{
+	if (user) {
+		printf("User:\n");
+		printf("Nome: %s\n", user->name);
+		printf("Data de nascimento: %s\n", user->date);
+		printf("Email: %s\n", user->email);
+		printf("CEP: %s\n", user->cep);
+
+		struct interesses *curr = user->primeiroInteresse;
+		int i = 0;
+		while (curr) {
+			printf("Interesse %d: %s\n", i + 1, curr->novoInteresse);
+			curr = curr->prox;
+			i++;
+		}
+	}
+}
+
 struct lista *primeiro = NULL;
-struct lista *atual = NULL;
 
 void inserir(char *nome, char *data, char *email, char *cep, struct interesses *pInteresse)
 {
-
 	struct lista *aux = (struct lista*) malloc(sizeof(struct lista));
 
 	aux->name = nome;
 	aux->date = data;
 	aux->email = email;
 	aux->cep = cep;
-	aux-> primeiroInteresse = pInteresse;
+	aux->primeiroInteresse = pInteresse;
 
 	aux->prox = primeiro;
 	primeiro = aux;
-
 }
 struct interesses *inserirInteresses(char *interesse )
 {
@@ -45,7 +61,6 @@ struct interesses *inserirInteresses(char *interesse )
 	novo->prox = primeiroI;
 	primeiroI = novo;
 	return primeiroI;
-
 }
 
 void imprimirUser() {
@@ -63,7 +78,7 @@ void imprimirUser() {
 
 int main(int argc, char **argv)
 {
-
+	FILE *file_ptr = fopen("backup.txt", "a");
 	char *id;
 	char *nome;
 	int numInteresses = 0;
@@ -88,14 +103,45 @@ int main(int argc, char **argv)
 		i0++;
 
 	}
-	printf("\n|Nome = %s\n|ID = %s\n|Nascimento = %s\n|email = %s\n|cep = %s",nome,  id, dataNascimento, email, cep);
+
+	
+
 	for (int j = 0; j < numInteresses; j++) {
 		printf("\n|Interesse %d = %s", j+1, interesses[j]);
 		primUser = inserirInteresses(interesses[j]);
 	}
 
 	inserir(nome, dataNascimento, email,cep, primUser);
+	
+	printf("** Usuário Inserido através de 'backup.c' **\n")
+	printf("\n|Nome = %s\n|ID = %s\n|Nascimento = %s\n|email = %s\n|cep = %s\n",nome,  id, dataNascimento, email, cep);
 
-	imprimirUser();
+	struct lista *curr = primeiro;
 
+	while (curr) {
+		fprintf(file_ptr, "Nome: %s, ", primeiro->name);
+		fprintf(file_ptr, "Data de Nascimento: %s, ", primeiro->date);
+		fprintf(file_ptr, "Email: %s, ", primeiro->email);
+		fprintf(file_ptr, "CEP: %s, ", primeiro->cep);
+		
+		struct interesses *curr_interest = primeiro->primeiroInteresse;
+		int i = 0;
+
+		fprintf(file_ptr, "Interesses: [");
+
+		while (curr_interest) {
+			if (!(curr_interest->prox))
+				fprintf(file_ptr, "%d: %s", i + 1, curr_interest->novoInteresse);
+			else
+				fprintf(file_ptr, "%d: %s, ", i + 1, curr_interest->novoInteresse);
+
+			curr_interest = curr_interest->prox;
+			i++;
+		}
+
+		fprintf(file_ptr, "]\n");
+
+		curr = curr->prox;
+	}
+	// imprimirUser();
 }
