@@ -1,6 +1,1 @@
-{
-	"currentID":1,
-	"users":[
-
-	]
-}
+{"currentID":2,"users":[{"name":"Ewerton","datanascimento":"2020-05-10","email":"eal@cesar.school","cep":"50123123","id":1,"interesses":["viagem","pintura"]}]}
