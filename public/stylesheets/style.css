@@ -1,21 +1,78 @@
-.navbar {
-    background-color: black;
-    overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-  }
-
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+body{
+    background: #F8F8F8;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
 }
 
-.navbar a:hover {
-    background: #ddd;
+#logo {
+    height: 150px;
+    margin: 20px;
+}
+
+#btn-purple {
+    background: #9839C5;
+    border-radius: 6px;
+    margin-left: 10px;
+    color: #FFFFFF;
+}
+
+#filter {
+    top: 100px;
+}
+
+.menu-img {
+    height: 35px;
+}
+
+.nav-text {
+    font-size: 14px;
     color: black;
+}
+
+.pages {
+    background-color: #F9E7FF;
+    padding-top: 65px;
+}
+
+.img-search {
+    height: 20px;
+}
+
+.filter {
+    padding: 10px;
+}
+
+.post {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.post-title {
+    font-weight: bold;
+    color: #420062;
+}
+
+.post-title:hover{
+    font-weight: bold;
+    color: #420062;
+}
+
+.img-posts{
+    border-radius: 5px;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.post-tags{
+    text-transform: capitalize;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.post-tags::before{
+    content: "Tags: ";
 }
