@@ -86,35 +86,33 @@ int main(int argc, char **argv)
 	char *email;
 	char *cep;
 
-	id = argv[1];
-	nome = argv[2];
-	dataNascimento = argv[3];
-	email = argv[4];
-	cep = argv[5];
+	nome = argv[1];
+	dataNascimento = argv[2];
+	email = argv[3];
+	cep = argv[4];
 
-	numInteresses = argc - 6;
+	numInteresses = argc - 5;
 
 	char *interesses[numInteresses];
 	struct interesses *primUser = (struct interesses*) malloc(sizeof(struct interesses)); //armazena primeiro interesse do usuario para cahr os proximos
 
 	int i0 = 0;
-	for(int i = 6; i < argc; i++) {
+	for(int i = 5; i < argc; i++) {
 		interesses[i0] = argv[i];
 		i0++;
 
 	}
 
+	inserir(nome, dataNascimento, email,cep, primUser);
 	
-
+	printf("** Usuário Inserido através de 'backup.c' **\n");
+	printf("\n|Nome = %s\n|ID = %s\n|Nascimento = %s\n|email = %s\n|cep = %s\n",nome,  id, dataNascimento, email, cep);
+	
 	for (int j = 0; j < numInteresses; j++) {
 		printf("\n|Interesse %d = %s", j+1, interesses[j]);
 		primUser = inserirInteresses(interesses[j]);
 	}
-
-	inserir(nome, dataNascimento, email,cep, primUser);
-	
-	printf("** Usuário Inserido através de 'backup.c' **\n")
-	printf("\n|Nome = %s\n|ID = %s\n|Nascimento = %s\n|email = %s\n|cep = %s\n",nome,  id, dataNascimento, email, cep);
+	printf("\n");
 
 	struct lista *curr = primeiro;
 
@@ -129,12 +127,13 @@ int main(int argc, char **argv)
 
 		fprintf(file_ptr, "Interesses: [");
 
-		while (curr_interest) {
-			if (!(curr_interest->prox))
-				fprintf(file_ptr, "%d: %s", i + 1, curr_interest->novoInteresse);
-			else
-				fprintf(file_ptr, "%d: %s, ", i + 1, curr_interest->novoInteresse);
 
+		while (curr_interest) {
+			if (!(curr_interest->prox)) {
+				fprintf(file_ptr, "%d: %s", i + 1, curr_interest->novoInteresse);
+			} else {
+				fprintf(file_ptr, "%d: %s, ", i + 1, curr_interest->novoInteresse);
+			}
 			curr_interest = curr_interest->prox;
 			i++;
 		}
@@ -144,4 +143,5 @@ int main(int argc, char **argv)
 		curr = curr->prox;
 	}
 	// imprimirUser();
+	printUser(primeiro);
 }

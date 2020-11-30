@@ -29,12 +29,6 @@ app.post('/register', (req, res) => {
 
 	const json = JSON.stringify(data);
 
-	// const usrString = `${user.id}`;
-
-	exec("gcc backup.c -o backup.o && ./backup.o ID Nome data-nascimento email cep interesse1...", (err, stdout, stderr) => {
-		
-	});
-
 	fs.writeFileSync('data.json', json);
 	res.redirect(`/explanation/${user.id}`);
 });
@@ -76,14 +70,32 @@ app.post('/interests/:id', (req, res) => {
 	for (interest in req.body) {
 		interests.push(interest);
 	}
-	
+
 	interests.map(interest => user.interesses.push(interest));
 	user.interesses = interests;
 	updatedUsers = data.users.filter(user => user.id != id);
 	updatedUsers.push(user);
 	data.users = updatedUsers;
+
 	const json = JSON.stringify(data);
+
 	fs.writeFileSync('data.json', json);
+
+	let usrString = `"${user.name}" ${user.datanascimento} ${user.email} ${user.cep}`;
+	
+	for (let i = 0; i < user.interesses.length; i++) {
+		usrString = usrString + ` ${user.interesses[i]}`;
+	}
+
+	exec(`gcc backup.c -o backup.o && ./backup.o ${usrString}`, (err, stdout, stderr) => {
+		if (err) {
+			console.error('There was an error:', err);
+			return;
+		}
+
+		console.log(`stdout: ${stdout}`)
+	});
+
 	res.redirect("/main/" + id);
 });
 
