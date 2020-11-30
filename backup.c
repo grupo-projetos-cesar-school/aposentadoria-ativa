@@ -117,12 +117,12 @@ int main(int argc, char **argv)
 	struct lista *curr = primeiro;
 
 	while (curr) {
-		fprintf(file_ptr, "Nome: %s, ", primeiro->name);
-		fprintf(file_ptr, "Data de Nascimento: %s, ", primeiro->date);
-		fprintf(file_ptr, "Email: %s, ", primeiro->email);
-		fprintf(file_ptr, "CEP: %s, ", primeiro->cep);
+		fprintf(file_ptr, "Nome: %s, ", curr->name);
+		fprintf(file_ptr, "Data de Nascimento: %s, ", curr->date);
+		fprintf(file_ptr, "Email: %s, ", curr->email);
+		fprintf(file_ptr, "CEP: %s, ", curr->cep);
 		
-		struct interesses *curr_interest = primeiro->primeiroInteresse;
+		struct interesses *curr_interest = curr->primeiroInteresse;
 		int i = 0;
 
 		fprintf(file_ptr, "Interesses: [");
