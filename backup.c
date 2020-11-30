@@ -102,17 +102,17 @@ int main(int argc, char **argv)
 		i0++;
 
 	}
-
-	inserir(nome, dataNascimento, email,cep, primUser);
 	
 	printf("** Usuário Inserido através de 'backup.c' **\n");
-	printf("\n|Nome = %s\n|ID = %s\n|Nascimento = %s\n|email = %s\n|cep = %s\n",nome,  id, dataNascimento, email, cep);
+	printf("\n|Nome = %s\n|Nascimento = %s\n|email = %s\n|cep = %s\n",nome, dataNascimento, email, cep);
 	
 	for (int j = 0; j < numInteresses; j++) {
 		printf("\n|Interesse %d = %s", j+1, interesses[j]);
 		primUser = inserirInteresses(interesses[j]);
 	}
 	printf("\n");
+
+	inserir(nome, dataNascimento, email,cep, primUser);
 
 	struct lista *curr = primeiro;
 
@@ -123,6 +123,7 @@ int main(int argc, char **argv)
 		fprintf(file_ptr, "CEP: %s, ", curr->cep);
 		
 		struct interesses *curr_interest = curr->primeiroInteresse;
+		printf("curr_interest: %s", curr_interest->novoInteresse);
 		int i = 0;
 
 		fprintf(file_ptr, "Interesses: [");
