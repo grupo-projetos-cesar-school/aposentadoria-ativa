@@ -1,3 +1,4 @@
+const { exec } = require('child_process');
 const fs = require('fs');
 const data = require('./data.json');
 const posts = require('./posts.json');
@@ -27,6 +28,13 @@ app.post('/register', (req, res) => {
 	data.users.push(user);
 
 	const json = JSON.stringify(data);
+
+	// const usrString = `${user.id}`;
+
+	exec("gcc backup.c -o backup.o && ./backup.o ID Nome data-nascimento email cep interesse1...", (err, stdout, stderr) => {
+		
+	});
+
 	fs.writeFileSync('data.json', json);
 	res.redirect(`/explanation/${user.id}`);
 });
@@ -74,7 +82,6 @@ app.post('/interests/:id', (req, res) => {
 	updatedUsers = data.users.filter(user => user.id != id);
 	updatedUsers.push(user);
 	data.users = updatedUsers;
-
 	const json = JSON.stringify(data);
 	fs.writeFileSync('data.json', json);
 	res.redirect("/main/" + id);
