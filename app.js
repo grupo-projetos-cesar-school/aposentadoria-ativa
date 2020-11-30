@@ -31,7 +31,9 @@ app.post('/register', (req, res) => {
 
 	// const usrString = `${user.id}`;
 
-	exec();
+	exec("gcc backup.c -o backup.o && ./backup.o ID Nome data-nascimento email cep interesse1...", (err, stdout, stderr) => {
+		
+	});
 
 	fs.writeFileSync('data.json', json);
 	res.redirect(`/explanation/${user.id}`);

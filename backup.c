@@ -10,8 +10,9 @@ struct lista {
 	char *cep;
         struct lista *prox;
 };
-	struct lista *primeiro = NULL;
-	struct lista *atual = NULL;
+
+struct lista *primeiro = NULL;
+struct lista *atual = NULL;
 
 void inserir(char *nome, char *data, char *email, char *cep )
 {
