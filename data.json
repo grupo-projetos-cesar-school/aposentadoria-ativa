@@ -1,5 +1,1 @@
-{
-	"currentID":1,
-	"users":[
-
-	]}
+{"currentID":3,"users":[{"name":"EWERTON DE ARAUJO LUNA","datanascimento":"1223-12-12","email":"ewerton.al@gmail.com","cep":"50720-260","senha":"123","id":1,"interesses":["fotografia","jardinagem","exercicios"]},{"name":"ewaasd","datanascimento":"123123-03-12","email":"ewerton.al@gmail.com","cep":"50720-260","senha":"123","id":2,"interesses":["culinaria","saude"]}]}

@@ -105,15 +105,19 @@ app.get('/main/:id', (req, res)=> {
 	const interests = user.interesses;
 	const allPosts = posts.posts;
 	const userPosts = [];
+	const otherPosts = [];
 
 	for (post of allPosts) {
 		for (interest of interests) {
 			if (post.tags.includes(interest)) {
 				userPosts.push(post);
+			} else {
+				otherPosts.push(post);
 			}
 		}
 	}
-	res.render('main', { posts: userPosts });
+
+	res.render('main', { otherPosts, posts: userPosts });
 });
 
 app.listen(3000, () => console.log("Abuelos' app is running on port 3000"));
