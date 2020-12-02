@@ -111,10 +111,23 @@ app.get('/main/:id', (req, res)=> {
 		for (interest of interests) {
 			if (post.tags.includes(interest)) {
 				userPosts.push(post);
-			} else {
-				otherPosts.push(post);
 			}
 		}
+	}
+
+	for (post of allPosts) {
+		let isNotIn = true;
+
+		post.tags.forEach(tag => {
+			if (interests.includes(tag)) {
+				isNotIn = false;
+			}
+		});
+
+		if (isNotIn) {
+			otherPosts.push(post);
+		}
+
 	}
 
 	res.render('main', { otherPosts, posts: userPosts });
