@@ -52,6 +52,7 @@ void inserir(char *nome, char *data, char *email, char *cep, struct interesses *
 	aux->prox = primeiro;
 	primeiro = aux;
 }
+
 struct interesses *inserirInteresses(char *interesse )
 {
 
@@ -72,7 +73,6 @@ void imprimirUser() {
 	printf("| Nome = %s \n| Data = %s \n|Email = %s \n|Cep = %s",ptr->name,ptr->date,ptr->email,ptr->cep);
 	ptr = ptr->prox;
    }
-
 }
 
 
