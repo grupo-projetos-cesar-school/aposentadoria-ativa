@@ -1,12 +1,11 @@
 const interests = document.getElementsByClassName("main-interests");
 const notInterests = document.getElementsByClassName("not-main-interests");
 
-console.log(interests);
-
 for (i = 0; i < notInterests.length; i++) {
 	notInterests[i].style.display = 'none';
 }
 
+console.log(interests);
 console.log(notInterests);
 
 const filterContainer = document.getElementsByClassName("container filter")[0];
@@ -19,10 +18,12 @@ const exerciciosButton = buttons[4];
 const culinariaButton = buttons[5];
 const pinturaButton = buttons[6];
 const saudeButton = buttons[7];
+let highlightedTopicsDiv;
+let highlightedTopics;
 
 filterContainer.addEventListener('click', (e) => {
-	const highlightedTopicsDiv = document.getElementsByClassName("highlight");
-	const highlightedTopics = [];
+	highlightedTopicsDiv = document.getElementsByClassName("highlight");
+	highlightedTopics = [];
 	// console.log(highlightedTopicsDiv);
 
 	for (i = 0; i < highlightedTopicsDiv.length; i++) {
@@ -51,10 +52,9 @@ filterContainer.addEventListener('click', (e) => {
 		// Fazer aparecer apenas tópicos com assuntos selecionados
 		for (i = 0; i < interests.length; i++) {
 			const tagName = interests[i].querySelector('p.post-tags').textContent;
-
+		
 			if (highlightedTopics.includes(tagName)) {
 				interests[i].style.display = 'block';
-				console.log(interests[i]);
 			} else {
 				interests[i].style.display = 'none';
 			}
@@ -65,7 +65,6 @@ filterContainer.addEventListener('click', (e) => {
 
 			if (highlightedTopics.includes(tagName)) {
 				notInterests[i].style.display = 'block';
-				console.log(notInterests[i]);
 			} else {
 				notInterests[i].style.display = 'none';
 			}
